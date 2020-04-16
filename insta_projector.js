@@ -109,6 +109,9 @@ async function wrapper(){
   if(fp == 'vietnamveteransmemorial'){
     nodecut = 20
   }
+  else {
+    nodecut = 10
+  }
 
 
   d3.select('#nodecut').text(nodecut)
