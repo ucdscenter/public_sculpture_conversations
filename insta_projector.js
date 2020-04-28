@@ -113,7 +113,7 @@ async function wrapper(){
     nodecut = 10
   }
 
-
+  d3.select("#the-label").text(fp)
   d3.select('#nodecut').text(nodecut)
 
   //let fp = 'cloudgate';
