@@ -94,7 +94,7 @@ async function wrapper(){
   console.log(params)
   let fp = params.hashtag
   let basetags = [fp]
-  let nodecut = 25;
+  let nodecut = 10;
   let data = await d3.json('graph_data_' + fp + '.json')
 
   let transform = d3.zoomIdentity;
@@ -109,9 +109,7 @@ async function wrapper(){
   if(fp == 'vietnamveteransmemorial'){
     nodecut = 20
   }
-  else {
-    nodecut = 10
-  }
+
 
   d3.select("#the-label").text(fp)
   d3.select('#nodecut').text(nodecut)
